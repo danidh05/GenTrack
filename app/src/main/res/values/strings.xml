@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">GenTrack</string>
+    <string name="app_subtitle">Generator Management</string>
+
+    <!-- Auth -->
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="action_login">Login</string>
+    <string name="error_empty_email">Email is required</string>
+    <string name="error_empty_password">Password is required</string>
+    <string name="error_login_failed">Login failed. Check your credentials.</string>
+
+    <!-- Customer -->
+    <string name="title_customers">Customers</string>
+    <string name="label_name">Name</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_location">Location</string>
+    <string name="label_amps">Amps</string>
+    <string name="label_status">Status</string>
+    <string name="label_notes">Notes</string>
+    <string name="action_add_customer">Add Customer</string>
+    <string name="action_edit_customer">Edit Customer</string>
+    <string name="title_add_customer">Add Customer</string>
+    <string name="title_edit_customer">Edit Customer</string>
+    <string name="empty_customers">No customers yet</string>
+    <string name="action_add_first_customer">Add your first customer</string>
+    <string name="error_delete_has_bills">Cannot delete customer with existing bills.</string>
+    <string name="confirm_delete_customer">Are you sure you want to delete this customer?</string>
+
+    <!-- Status values -->
+    <string name="status_active">Active</string>
+    <string name="status_unpaid">Unpaid</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_paid">Paid</string>
+    <string name="status_partial">Partial</string>
+
+    <!-- Bills -->
+    <string name="title_bills">Bills</string>
+    <string name="label_month">Month</string>
+    <string name="label_price_per_amp">Price per Amp</string>
+    <string name="label_total">Total</string>
+    <string name="label_previous_balance">Previous Balance</string>
+    <string name="label_final_total">Final Total</string>
+    <string name="action_generate_bill">Generate Bill</string>
+    <string name="action_batch_generate">Batch Generate</string>
+    <string name="confirm_batch_generate">Generate bills for all Active customers this month?</string>
+
+    <!-- Payments -->
+    <string name="title_payments">Payments</string>
+    <string name="label_amount">Amount</string>
+    <string name="label_date">Date</string>
+    <string name="label_remaining_balance">Remaining Balance</string>
+    <string name="action_add_payment">Add Payment</string>
+    <string name="title_add_payment">Record Payment</string>
+
+    <!-- Dashboard -->
+    <string name="title_dashboard">GenTrack</string>
+    <string name="label_active_customers">Active Customers</string>
+    <string name="label_unpaid_customers">Unpaid Customers</string>
+    <string name="label_total_outstanding">Total Outstanding</string>
+    <string name="label_monthly_revenue">Monthly Revenue</string>
+    <string name="label_customer_status">Customer Status</string>
+    <string name="action_customer_list">Customer List</string>
+    <string name="action_view_bills">View Bills</string>
+
+    <!-- Announcements -->
+    <string name="title_announcements">Announcements</string>
+    <string name="label_announcement_title">Title</string>
+    <string name="label_announcement_message">Message</string>
+    <string name="action_post">Post</string>
+    <string name="action_view_all">View All</string>
+    <string name="error_announcements">Could not load announcements</string>
+
+    <!-- General actions -->
+    <string name="action_confirm">Confirm</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_share">Share PDF</string>
+    <string name="action_generate">Generate</string>
+    <string name="confirm_logout">Are you sure you want to logout?</string>
+    <string name="title_error">Error</string>
+    <string name="title_confirm">Confirm</string>
+    <string name="action_ok">OK</string>
+    <string name="action_yes">Yes</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_name">Payment Reminders</string>
+    <string name="notification_overdue_title">Overdue Bills</string>
+    <string name="notification_overdue_message">%1$s has %2$d overdue unpaid bill(s)</string>
+
+    <!-- CustomerDetailActivity -->
+    <string name="label_no_phone">No phone</string>
+    <string name="label_no_location">No location</string>
+    <string name="label_bills_section">Bills</string>
+    <string name="empty_bills">No bills yet</string>
+    <string name="empty_payments">No payments recorded</string>
+    <string name="label_payment_history">Payment History</string>
+    <string name="label_generate_preview">Preview</string>
+    <string name="error_invalid_month">Enter a valid month (YYYY-MM)</string>
+    <string name="msg_batch_result">Generated %1$d bills for active customers.</string>
+    <string name="error_no_active_customers">No active customers to bill.</string>
+    <string name="label_remaining">Remaining</string>
+    <string name="label_paid">Paid</string>
+    <string name="label_fully_paid">Fully paid</string>
+    <string name="label_partial_payment">Partial payment</string>
+    <string name="label_due">%1$s due</string>
+
+    <!-- Payment dialog -->
+    <string name="label_remaining_after">Remaining after payment</string>
+
+    <!-- Billing model / meter readings -->
+    <string name="label_readings_optional">Meter Readings (optional)</string>
+    <string name="label_current_reading">Current Reading (kWh)</string>
+    <string name="label_previous_reading">Previous Reading (kWh)</string>
+    <string name="hint_reading_optional">Leave blank for flat rate</string>
+    <string name="label_billing_model">Model</string>
+    <string name="label_flat_model">Flat (%1$dA tier)</string>
+    <string name="error_invalid_readings">Current reading must be greater than previous reading.</string>
+
+    <!-- Pricing Config -->
+    <string name="title_pricing_config">Pricing Config</string>
+    <string name="action_pricing_config">Pricing Config</string>
+    <string name="label_price_per_kwh">Price per kWh</string>
+    <string name="label_price_5a">Price 5A / month</string>
+    <string name="label_price_10a">Price 10A / month</string>
+    <string name="label_price_15a">Price 15A / month</string>
+    <string name="label_currency">Currency</string>
+    <string name="msg_config_saved">Pricing config saved.</string>
+    <string name="error_invalid_price_config">Must be a positive number.</string>
+
+    <!-- Dashboard -->
+    <string name="label_customer_status_chart">Customer Status</string>
+    <string name="label_monthly_revenue_chart">Monthly Revenue</string>
+    <string name="label_latest_announcement">Latest Announcement</string>
+    <string name="label_manage_customers">Manage Customers</string>
+    <string name="label_no_data">No data available</string>
+
+    <!-- Errors -->
+    <string name="error_network">Network error. Please try again.</string>
+    <string name="error_invalid_response">Invalid server response.</string>
+    <string name="error_app_not_installed">App not installed.</string>
+    <string name="error_negative_amps">Amps must be a positive number.</string>
+    <string name="error_empty_name">Name cannot be empty.</string>
+    <string name="error_negative_payment">Payment amount must be positive.</string>
+    <string name="error_payment_exceeds_balance">Payment cannot exceed remaining balance of $%1$.2f.</string>
+    <string name="error_invalid_price">Price per amp must be positive.</string>
+    <string name="error_bill_month_exists">A bill for this month already exists for this customer.</string>
+
+    <!-- Announcements Phase 7 -->
+    <string name="empty_announcements">No announcements yet</string>
+    <string name="title_new_announcement">New Announcement</string>
+    <string name="error_announcement_empty_fields">Title and message are required</string>
+    <string name="msg_announcement_posted">Announcement posted</string>
+
+    <!-- PDF + Contact Phase 8 -->
+    <string name="title_share_bill">Share Bill</string>
+    <string name="error_pdf_failed">Could not generate PDF</string>
+    <string name="error_no_phone">No phone number on record</string>
+    <string name="error_sms_not_available">SMS app not available</string>
+    <string name="error_whatsapp_not_installed">WhatsApp not installed</string>
+
+    <!-- Dual billing model -->
+    <string name="label_model_flat_rate">Flat Rate</string>
+    <string name="label_model_base_consumption">Base + Consumption</string>
+    <string name="label_base_fee">Base Fee</string>
+    <string name="label_consumption_charge">Consumption Charge</string>
+    <string name="label_base_fee_5a">Base Fee 5A / month</string>
+    <string name="label_base_fee_10a">Base Fee 10A / month</string>
+    <string name="label_base_fee_15a">Base Fee 15A / month</string>
+    <string name="error_pricing_not_configured">Pricing not configured. Please set prices in Pricing Config before generating a bill.</string>
+</resources>

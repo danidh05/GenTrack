@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="4dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/AppToolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dialog_padding">
+
+            <!-- Price per kWh -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPricePerKwh"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_price_per_kwh"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/textSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPricePerKwh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/textPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Price 5A / month -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPrice5a"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/label_price_5a"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/textSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPrice5a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/textPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Price 10A / month -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPrice10a"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/label_price_10a"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/textSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPrice10a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/textPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Price 15A / month -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPrice15a"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/label_price_15a"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/textSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPrice15a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/textPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Base Fee 5A / month -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBasePrice5a"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/label_base_fee_5a"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/textSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBasePrice5a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/textPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Base Fee 10A / month -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBasePrice10a"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/label_base_fee_10a"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/textSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBasePrice10a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/textPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Base Fee 15A / month -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBasePrice15a"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/label_base_fee_15a"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/textSecondary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBasePrice15a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/textPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Currency dropdown -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCurrency"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/label_currency"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/textSecondary">
+
+                <AutoCompleteTextView
+                    android:id="@+id/spinnerCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:textColor="@color/textPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Save button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveConfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/action_save"
+                app:backgroundTint="@color/colorAccent"
+                app:cornerRadius="@dimen/card_corner_radius" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

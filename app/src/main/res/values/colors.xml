@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary -->
+    <color name="colorPrimary">#1A1A2E</color>
+    <color name="colorPrimaryVariant">#16213E</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+
+    <!-- Accent -->
+    <color name="colorAccent">#E94560</color>
+    <color name="colorAccentLight">#FF6B6B</color>
+
+    <!-- Surface -->
+    <color name="colorSurface">#0F3460</color>
+    <color name="colorBackground">#F8F9FA</color>
+    <color name="colorCardBackground">#FFFFFF</color>
+
+    <!-- Status Colors -->
+    <color name="statusActive">#2ECC71</color>
+    <color name="statusUnpaid">#F39C12</color>
+    <color name="statusDisconnected">#E74C3C</color>
+    <color name="statusPaid">#2ECC71</color>
+    <color name="statusPartial">#F39C12</color>
+
+    <!-- Text -->
+    <color name="textPrimary">#1A1A2E</color>
+    <color name="textSecondary">#6C757D</color>
+    <color name="textOnDark">#FFFFFF</color>
+    <color name="textHint">#ADB5BD</color>
+
+    <!-- Utility -->
+    <color name="divider">#E9ECEF</color>
+    <color name="ripple">#1A1A2E26</color>
+
+    <!-- Keep defaults -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
